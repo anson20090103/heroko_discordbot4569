@@ -36,9 +36,3 @@ async def on_message(message):
 
 # Bot起動
 client.run(TOKEN)
-
-async def on_ready():
-    print('目前登入身份：',client.user)
-    game = discord.Game('設計中')
-    #discord.Status.<狀態>，可以是online,offline,idle,dnd,invisible
-    await client.change_presence(status=discord.Status.idle, activity=game)
