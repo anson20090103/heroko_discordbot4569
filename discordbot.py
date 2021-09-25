@@ -36,5 +36,3 @@ async def on_message(message):
 
 # Bot起動
 client.run(TOKEN)
-
-game = discord.Game('正在更新中')
